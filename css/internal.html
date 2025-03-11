@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<!--
+1) internal : we can apply internal css between <style></style> tag
+ 
+ Exa: 
+ 
+ <style>
+ 
+ h1{ color:red;background-color:yellow;text-align:center }
+ 
+ </style>
+
+-->
+
+<style>
+	h1,h2,h3{ 
+		color:red;
+		background-color:yellow;
+		text-align:center;
+	  }
+	  
+	  .test1{
+		color:white;
+		background-color:red;
+	  }
+	  
+	  .textcenter{
+		text-align:center;
+	  }
+	  
+	  #demo1{
+		color:white;
+		background-color:green;
+	  }
+	  
+	  .box{
+		width:200px;
+		height:200px;
+		background-color:blue;
+	  }
+	  
+	  .box h4, .box h5{
+		color:yellow;
+	  }
+	  
+	  h6.mydiv{
+		background-color:black;
+		color:white;
+		text-transform:uppercase;
+	  }
+	  
+	  
+	  
+</style>
+
+
+<body>
+
+	<h1>Hi i am inline css</h1>
+	<h1>Hi i am inline css</h1>
+	<h2>Hi i am inline css</h2>
+	<h3>Hi i am inline css</h3>
+	
+	<p class="test1 textcenter ">Hi i am A p</p>
+	<p class="test1">Hi i am A p</p>
+	<p class="test1 textcenter">Hi i am A p</p>
+	
+	
+	<p id="demo1">Hi i am B p</p>
+	<p id="demo1">Hi i am B p</p>
+	<p id="demo1">Hi i am B p</p>
+	
+	
+	<div class="box">
+		<h4> Hello i am div H4</h4>
+		<h5> Hello i am div H4</h5>
+	</div>
+	
+	
+	<h4> Hello i am Normal H4</h4>
+	<h5> Hello i am div H4</h5>
+	
+	<h6 class="mydiv"> Hello i am div H4</h6>
+	<h6> Hello i am div H4</h6>
+	
+</body>
+</html>
