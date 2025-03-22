@@ -1,0 +1,58 @@
+<!--
+Without the CSS box-sizing Property
+By default, the width and height of an element is calculated like this:
+
+width + padding + border = actual width of an element
+height + padding + border = actual height of an element
+
+*{
+ box-sizing: border-box;
+}
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	
+	*{
+		box-sizing: border-box;
+	}
+	
+	.test1{
+		width:50%;
+		height:200px;
+		float:left;
+		background-color:yellow;
+		padding:1%;
+		border: solid 10px black;
+	}
+	
+	.test2{
+		width:50%;
+		height:200px;
+		float:left;
+		background-color:orange;
+		padding:1%;
+		border: solid 5px black;
+	}
+	
+</style>
+</head>
+
+
+<body>
+	<div class="test1">
+		<h1>Doctor can...</h1>
+		<p>DOCMEDI also save time of doctor. With your registration on this website doctor can see every single data of their patient. Doctor don’t need to keep physical data for patient.By just entering patient id doctor can see all details of their patient like Rx ,medical reports,diagnose details etc.</p>
+	</div>
+	
+	<div class="test2">
+		<h1>Doctor can...</h1>
+		<p>DOCMEDI also save time of doctor. With your registration on this website doctor can see every single data of their patient. Doctor don’t need to keep physical data for patient.By just entering patient id doctor can see all details of their patient like Rx ,medical reports,diagnose details etc.</p>
+	</div>
+
+</body>
+</html>
