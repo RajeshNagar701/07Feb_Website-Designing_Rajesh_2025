@@ -7,32 +7,27 @@
 
 
 <style>
+
 .block{
-  background-image: url('img1.jpg');
-  position: relative;
+  background-image: url('background_images.jpg');
   background-size:100% 100%;
 }
 
-.block::before{
-  background-color: rgba(0, 0, 0, 0.5);
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
 
 .block1{
-background:linear-gradient( rgba(0, 0, 0, 0.2) 100%, rgba(0, 0, 0, 0.2)100%),url("img1.jpg");
+  background-image: url('moon.png'),url('moon.png'),url('background_images.jpg');
+  background-position:300px 80px,100px 50px,left top;
+  background-repeat:no-repeat,no-repeat,no-repeat;
+  background-attachment:scroll,scroll,scroll;
+  background-size:160px 160px ,80px 80px ,100% 100%;
 }
+
+
 
 .block2{
-
-background-image: linear-gradient(to right, rgba(109, 179, 120, .2), rgba(109, 179, 242, .2)), url('img1.jpg');
-background-size: 100% 100%, 100% 100%;
-
+  background: url('moon.png') 300px 80px no-repeat scroll,url('moon.png') 160px 160px no-repeat scroll,url('background_images.jpg') left top no-repeat scroll;
+  background-size: 160px 160px,80px 80px ,100% 100%;
 }
-
-
 
 </style>
 
@@ -48,7 +43,6 @@ background-size: 100% 100%, 100% 100%;
 <h1 class="block1">Hi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morning</h1>
 
 <h1 class="block2">Hi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morningHi good morning</h1>
-
 
 
 </body>
