@@ -1,0 +1,90 @@
+
+
+
+<!--
+
+document.write("Hello");
+window.alert("Hello");
+
+
+
+
+print
+
+innerHTML document.getElementById('text').innerHTML="<H1>text hello<H1>"  
+innerText document.getElementById('text').innerText="<H1>text hello<H1>"
+value	  document.getElementById('text').value="text hello"
+
+
+get 
+
+var htmlcode=document.getElementById('test1').innerHTML"  
+var textcode=document.getElementById('test1').innerText"
+var valuecode=document.getElementById('test1').value"
+
+
+
+
+-->
+
+<script>
+	
+	//document.write("Hello");
+
+	//window.alert("Hello");
+	
+	// console.log("Hello");
+
+</script>
+
+
+<!-- Print Data -->
+
+<p id='test1'>Hello html</p>
+
+<script>
+	document.getElementById('test1').innerHTML="<h1>Hello Javascript</h1>";
+</script>
+
+
+<p id='test2'>Hello html</p>
+
+<script>
+	document.getElementById('test2').innerText="<h1>Hello Javascript</h1>";
+</script>
+
+<input type="text" value="raj" id='test3'>
+
+<script>
+	document.getElementById('test3').value="Akash";
+</script>
+
+
+
+<!-- Get Data -->
+
+
+
+<p id='demo1'>Hello html</p>
+
+<script>
+	var html=document.getElementById('demo1').innerHTML;
+	console.log(html);
+</script>
+
+
+<p id='demo2'>Hello Text</p>
+
+<script>
+
+	var text=document.getElementById('demo2').innerText;
+	console.log(text);
+
+</script>
+
+<input type="text" value="raj" id='demo3'>
+
+<script>
+	var value=document.getElementById('demo3').value;
+	console.log(value);
+</script>
