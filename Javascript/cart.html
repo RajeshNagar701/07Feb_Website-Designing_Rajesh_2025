@@ -1,0 +1,60 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+</head>
+<body>
+
+
+<button onclick="plush()">+</button>
+<span id="test">1</span>
+<button onclick="minus()">-</button>
+
+<script>
+	function plush()
+	{
+		var number=document.getElementById('test').innerText;
+		number++;
+		document.getElementById('test').innerText=number;
+	}
+	function minus()
+	{
+		
+		var number=document.getElementById('test').innerText;
+		if(number>0)
+		{
+			number--;
+			document.getElementById('test').innerText=number;
+		}
+	}
+	
+</script>
+
+
+
+<button onclick="plush1()">+</button>
+<input type="text" id="demo" value="1">
+<button onclick="minus1()">-</button>
+
+<script>
+	function plush1()
+	{
+		var value=document.getElementById('demo').value;
+		value++;
+		document.getElementById('demo').value=value;
+	}
+	function minus1()
+	{
+		var value=document.getElementById('demo').value;
+		value--;
+		document.getElementById('demo').value=value;
+	}
+	
+</script>
+
+</body>
+</html>
+
