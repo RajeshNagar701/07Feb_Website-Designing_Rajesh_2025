@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<input type="submit" value="bulb on" onClick="onbulb()">
+
+<img src="pic_bulboff.gif" id="bulb" height="200px" width="100px" onmouseover="onbulb()" onmouseout="offbulb()">
+
+<input type="submit" value="bulb off" onClick="offbulb()">
+
+
+<script>
+
+	function onbulb(){
+			var bulb=document.getElementById('bulb');
+			bulb.src='pic_bulbon.gif';
+	}
+	
+	function offbulb(){
+			var bulb=document.getElementById('bulb');
+			bulb.src='pic_bulboff.gif';
+	}
+
+</script>
+
+</body>
+</html>

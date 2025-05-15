@@ -1,0 +1,22 @@
+
+
+<h1 id="test">Hello</h1>
+
+<h2 id="time"></h2>
+
+<script>
+	
+	setTimeout(happy,5000);
+	
+	function happy(){
+		document.getElementById('test').innerHTML="Happy Birthday !";
+	}
+	
+	setInterval(watch,1000);
+	
+	function watch(){
+		var today = new Date();
+		document.getElementById('time').innerHTML=today.toLocaleTimeString();
+	}
+	
+</script>
