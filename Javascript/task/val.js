@@ -171,14 +171,13 @@ function reg_form(str)
 	} 
 	
 	
-	//below function is for pdf validation
 	function check1(file)
 	{
 	
 	var filename=file.value;
 	var ext=filename.substring(filename.lastIndexOf('.')+1); // get ext from file name
 	
-		if(ext=="pdf" || ext=="PDF")
+		if(ext=="PDF" || ext=="pdf")
 		{
 			document.getElementById("msg1").innerHTML="";
 			document.getElementById("submit").disabled=false;
