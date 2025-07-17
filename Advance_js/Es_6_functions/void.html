@@ -8,6 +8,9 @@ This operator specifies an expression to be evaluated without returning a value.
 --> 
  
  <!--
+ 
+ javascript:void('')
+ 
  Here the expression alert ('Warning!!!') is evaluated but it is not loaded back 
  into the current document −
  
@@ -23,9 +26,14 @@ This operator specifies an expression to be evaluated without returning a value.
  -->
 <a href = "javascript:void(document.write('hello'))">Click me!</a>      
 <!--
-We can use the operand 0 in two ways that are void(0) or void 0. Both of the ways work the same. 
-The JavaScript:void(0) tells the browser to "do nothing" i.e., prevents the browser from reloadin		g or refreshing the page. 
-It is useful when we insert links that have some important role on the webpage without any reloading.
+We can use the operand 0 in two ways that are void(0) or void 0. 
+Both of the ways work the same. 
+
+The JavaScript:void(0) tells the browser to "do nothing" i.e., 
+prevents the browser from reloading or refreshing the page. 
+It is useful when we insert links that have some important role on 
+the webpage without any reloading.
+
  So, using void(0) on such links prevents the reloading of the page but allows to perform a useful function such as updating a value on the webpage.
 -->
 <a href ="" onclick="">  
