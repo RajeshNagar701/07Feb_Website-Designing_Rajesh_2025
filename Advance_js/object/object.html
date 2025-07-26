@@ -1,0 +1,125 @@
+<script>
+
+/*
+
+variables
+
+
+number
+string
+array
+
+object
+
+object  object is an entity having state and behavior (properties and method)
+
+ => single object
+ 
+student={id:1,name:"raj",email:"raj@gmail.com"}
+document.write(student.name);
+
+ => arr object
+
+students=[
+	{id:1,name:"raj",email:"raj@gmail.com"},
+	{id:2,name:"nikita",email:"nikita@gmail.com"},
+	{id:3,name:"prem",email:"prem@gmail.com"}
+];
+
+document.write(students[1].name);
+
+
+
+*/
+
+
+/*
+JavaScript Objects
+A javaScript object is an entity having state and behavior (properties and method). 
+For example: car, pen, bike, chair, glass, keyboard, monitor etc.
+
+JavaScript is an object-based language. Everything is an object in JavaScript.
+
+JavaScript is template based not class based. Here, we don't create class to 
+get the object. But, we direct create objects.
+
+Creating Objects in JavaScript
+There are 3 ways to create objects.
+
+
+By object literal
+By creating instance of Object directly (using new keyword)
+By using an object constructor (using new keyword)
+
+
+*/
+
+/*
+
+//1) By object literal
+
+
+obj={id:102,name:"Shyam Kumar",salary:40000,age:42,email:"shyam@gmail.com"};
+
+console.log(obj);
+document.write(obj.id+" "+obj.name+" "+obj.salary + "<br>");
+
+for(prop in obj)
+{
+	document.write("<h1>" + obj[prop] + "</h1>");
+}
+
+*/
+obj_arr=[
+			{id:101,name:"Shyam Kumar",salary:40000},
+			{id:102,name:"Raj Kumar",salary:40000},
+			{id:103,name:"NIRAV Kumar",salary:40000}
+		];
+
+//document.write(obj_arr[1].id+" "+obj_arr[1].name+" "+obj_arr[1].salary + "<br>");
+
+
+/*
+for(var i=0;i<obj_arr.length;i++)
+{
+	document.write(obj_arr[i].id+" "+obj_arr[i].name+" "+obj_arr[i].salary + "<br>");
+}
+*/
+
+
+for(value of obj_arr)
+{
+	document.write(value.id+" "+value.name+" "+value.salary + "<br>");
+}
+
+
+// emp={} 
+
+// 2) By creating instance of Object directly (using new keyword)
+
+/*
+var emp=new Object();  
+emp.id=101;  
+emp.name="Ravi Malik";  
+emp.salary=50000;  
+document.write(emp.id+" "+emp.name+" "+emp.salary);  
+
+*/
+
+// 3) By using an object constructor (using new keyword)
+
+/*
+function emp(id,name,salary)
+{  
+	this.userid=id;
+	this.username=name;
+	this.usersalary=salary;
+}  
+obj=new emp(103,"Vimal Jaiswal",30000);
+obj1=new emp(104,"Ajay Jaiswal",40000);
+  
+document.write(obj.userid+" "+obj.username+ " " +obj.usersalary + "<br>");  
+document.write(obj1.userid+" "+obj1.username+ " " +obj1.usersalary);  
+*/
+
+</script>

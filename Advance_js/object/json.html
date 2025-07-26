@@ -1,0 +1,90 @@
+
+<!--
+
+
+JSON is a format for storing and transporting data.
+
+JSON is often used when data is sent from a server to a web page.
+
+JSON stands for JavaScript Object Notation
+
+JSON is a lightweight data interchange format
+
+JSON is language independent *
+
+JSON is "self-describing" and easy to understand
+* The JSON syntax is derived from JavaScript object notation syntax, but the JSON format is text only. Code for reading and generating JSON data can be written in any programming language.
+
+
+json=`{"id":102,"name":"Shyam Kumar","salary":40000}`;
+console.log(json);
+
+obj={id:102,name:"Shyam Kumar",salary:40000};  // javascript object
+console.log(obj);
+
+
+
+
+-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let jsonData = `[
+			{
+				"id": 1,
+				"productName": "Apple",
+				"Qty": 100
+			},
+			{
+				"id": 2,
+				"productName": "Pineapple",
+				"Qty": 120
+			},
+			{
+				"id": 3,
+				"productName": "Mango",
+				"Qty": 10
+			}
+		]`;
+		
+		
+		const obj_arr = JSON.parse(jsonData);
+		console.log(obj_arr);	
+		
+		const json_arr = JSON.stringify(obj_arr);
+		console.log(json_arr);	
+		
+		
+		
+		
+		
+		
+		/*
+		for(value of obj_arr)
+		{
+			document.write(value.id+" "+value.productName+" "+value.Qty + "<br>");
+		}
+		*/
+		
+		fetch(`https://jsonplaceholder.typicode.com/posts`)
+		.then((res)=> res.json())
+		.then((obj_arr)=> {
+			console.log(obj_arr);	
+		})
+		
+
+    </script>
+  </body>
+</html>
