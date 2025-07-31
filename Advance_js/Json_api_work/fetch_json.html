@@ -1,0 +1,39 @@
+
+
+<table border='1' id="data">
+	
+</table>
+
+
+<script>
+
+
+   fetch('https://dummyjson.com/products')
+  .then((response) => response.json())
+  .then((object) => {
+		console.log(object.products);
+		show(object.products)
+  });
+  
+   const element = document.getElementById("data");
+  
+   function show(arr_obj)
+   {
+	   for(value of arr_obj)
+	   {
+			var html=`<tr>
+						<td>${value.id}</td>
+						<td>${value.title}</td>
+						<td>${value.category}</td>
+					</tr>`;
+			element.insertAdjacentHTML('beforeend', html); 
+	   }
+  }  
+</script>
+
+
+
+
+
+
+
