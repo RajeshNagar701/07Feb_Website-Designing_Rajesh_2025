@@ -17,43 +17,49 @@
     <button onclick="fetchData()">Fetch Data</button>
     <div class="container">
 	  	
-      <div class="row" id="btn">
+      <div class="row" id="data">
+		
 	  </div>
     </div>
     <script>
        
-      let btn = document.getElementById("btn");
-
-      function showData(newData) 
+	   
+	  function fetchData() 
 	  {
-        for(const myData of newData) 
-		{
-          let htmlData = ` <div class="col-md-3">
-			<div class="card">
-			  <img src="${myData.image}" class="card-img-top" alt="" />
-			  <div class="card-body">
-				<h5 class="card-title">${myData.title}</h5>
-				<p class="card-text">${myData.description.slice(0, 20)}...</p>
-				<p class="card-text">Price : ${myData.price}</p>
-				<a href="#" class="btn btn-primary">Order Now</a>
-			  </div>
-			</div>
-		  </div>`;
-          btn.insertAdjacentHTML("afterbegin", htmlData);
-        }
-      }
-
-      function fetchData() 
-	  {
-        fetch("https://fakestoreapi.com/products")
+        fetch("https://dummyjson.com/products")
           .then((response) => {
             return response.json();
           })
           .then((data) => {
-            showData(data)
+           console.log(data.products);
+		   show(data.products)
           })
           .catch((err) => console.log(err));
-      }
+      } 
+	   
+	   
+	   
+	  let div = document.getElementById("data");  
+      function show(arrobj){
+		
+		for(const myData of arrobj) 
+		{
+		  let htmlData = `<div class="col-md-3">
+			<div class="card" style="width:100%">
+			  <img class="card-img-top" src="${myData.images}" width="100%" alt="Card image">
+			  <div class="card-body">
+				<h4 class="card-title">${myData.category}</h4>
+				<p class="card-text">${myData.title}</p>
+				<a href="#" class="btn btn-primary">See Profile</a>
+			  </div>
+			</div>
+		  </div>`;
+		  
+		  div.insertAdjacentHTML("afterbegin", htmlData);
+		}
+	  }
+
+      
     </script>
     
   </body>

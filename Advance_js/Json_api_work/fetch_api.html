@@ -15,8 +15,8 @@
   </head>
   <body>
     
-    <div class="container">
-	  
+    <div class="container mt-5">
+	  <div class="spinner-border" id="spin"></div>
       <div class="row" id="btn">
 	  
 	  </div>
@@ -48,6 +48,7 @@
 	  })
 	  .then((data) => {
 		showData(data.products);
+		document.getElementById('spin').style.display="none";
 	  })
 	  .catch((err) => console.log(err));
 	  
