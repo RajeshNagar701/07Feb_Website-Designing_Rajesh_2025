@@ -1,0 +1,744 @@
+<!--
+Breakpoints in tailwind CSS are as follows
+Breakpoint	min-width
+sm	640px
+md	768px
+lg	1024px
+xl	1280px
+2xl	1536px
+
+class="mx-auto"  margin auto
+class="px-20"    padding
+
+Box Sizing:
+
+box-border    
+box-content 
+
+
+
+Display
+
+class="block" display block
+class="inline-block" display inline-block
+class="inline" display inline
+class="flex" display flex
+class="inline-flex" display inline-flex
+class="table" display table
+class="grid" display grid
+class="inline-grid" display inline-grid
+
+
+Float
+
+class="float-left" float: left
+class="float-right" float: right
+class="float-none" float: none
+
+
+
+Clear
+
+class="clear-left "    clear-left
+class="clear-right " clear-right
+class="clear-both " clear-both
+class="clear-none" clear-none
+
+
+Object Fit
+
+class="object-contain "   
+class="object-cover "
+class="object-fill "
+class="object-none "
+class="object-scale-down"
+
+object-fit: cover;
+object-fit: fill;
+object-fit: none;
+object-fit: scale-down;
+
+
+Object Position
+
+
+object-left-top
+object-top
+object-right-top
+object-left
+object-center
+object-right
+object-left-bottom
+object-bottom
+object-right-bottom
+
+object-position: top;
+object-position: bottom;
+object-position: left;
+object-position: right;
+object-position: center;
+
+
+Overflow
+overflow-auto 
+overflow-hidden 
+overflow-visible 
+overflow-scroll 
+overflow-x-auto 
+overflow-y-auto 
+overflow-x-hidden 
+overflow-y-hidden 
+overflow-x-visible 
+overflow-y-visible 
+overflow-x-scroll 
+overflow-y-scroll 
+
+
+overflow: visible;
+overflow: hidden;
+overflow: clip;
+overflow: scroll;
+overflow: auto;
+overflow: hidden visible;
+
+
+OverScroll
+
+overscroll-auto
+overscroll-contain
+overscroll-none
+overscroll-y-auto
+overscroll-y-contain
+overscroll-y-none
+overscroll-x-auto
+overscroll-x-contain
+overscroll-x-none
+
+
+overscroll-behavior: auto; /* default */
+overscroll-behavior: contain;
+overscroll-behavior: none;
+
+/* Two values */
+overscroll-behavior: auto contain;
+
+/* Global values */
+overscroll-behavior: inherit;
+overscroll-behavior: initial;
+overscroll-behavior: revert;
+overscroll-behavior: revert-layer;
+overscroll-behavior: unset;
+
+
+
+Positions
+
+static
+fixed
+absolute
+relative
+sticky
+
+position: static;
+position: relative;
+position: absolute;
+position: fixed;
+position: sticky;
+
+
+
+Top/Left/Right/Bottom
+
+.inset-0
+.inset-y-0
+.inset-x-0
+.top-0
+.right-0
+.bottom-0
+.left-0
+
+inset: 10px; /* value applied to all edges */
+inset: 4px 8px; /* top/bottom left/right */
+inset: 5px 15px 10px; /* top left/right bottom */
+inset: 2.4em 3em 3em 3em; /* top right bottom left */
+
+top: 3px;
+top: 3px;
+
+
+
+
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- color: green -->
+    <!-- <h2 class="text-center text-green-300"> -->
+        <!-- GeeksforGeeks -->
+    <!-- </h2><br /> -->
+
+    <!-- margin: auto -->
+    <div class="bg-green-900 text-center text-white mx-auto p-12"> 
+        This is mx-auto class 
+     </div> 
+
+    <!-- box-sizing border box -->
+
+    <!-- <div class="box-border h-40 w-40 p-5   -->
+                <!-- border-4 bg-green-500 m4"> -->
+        <!-- box-sizzing:"border-box" -->
+    <!-- </div> -->
+
+	
+    <!-- Display block -->
+
+    <!-- <div class="bg-green-200 p-4 mx-16 space-y-4"> -->
+        <!-- <span class="block h-12 bg-green-500 rounded-lg">display: block</span> -->
+        <!-- <span class="block h-12 bg-green-500 rounded-lg">display: block</span> -->
+        <!-- <span class="block h-12 bg-green-500 rounded-lg">display: block</span> -->
+    <!-- </div> -->
+    <!-- Display inline-block -->
+    <!-- <div class="bg-green-200 p-4 mx-16 space-y-4"> -->
+        <!-- <span class="inline-block w-32 h-12 bg-green-500 rounded-lg">display: inline-block</span> -->
+        <!-- <span class="inline-block w-32 h-12 bg-green-500 rounded-lg">display: inline-block</span> -->
+        <!-- <span class="inline-block w-32 h-12 bg-green-500 rounded-lg">display: inline-block</span> -->
+    <!-- </div> -->
+
+    <!-- Display inline -->
+
+    <!-- <div class="bg-green-200 p-4 mx-16 space-y-4"> -->
+        <!-- <span class="inline bg-green-500 rounded-lg">display: inline</span> -->
+        <!-- <span class="inline bg-green-500 rounded-lg">display: inline</span> -->
+        <!-- <span class="inline bg-green-500 rounded-lg">display: inline</span> -->
+    <!-- </div> -->
+
+    <!-- Display flex -->
+
+    <!-- <div class="flex bg-green-200 p-4 mx-16 "> -->
+        <!-- <div class="flex-1 bg-green-500 rounded-lg">display: flex</div> -->
+        <!-- <div class="flex-1 bg-green-500 rounded-lg">display: flex</div> -->
+        <!-- <div class="flex-1 bg-green-500 rounded-lg">display: flex</div> -->
+    <!-- </div> -->
+
+    <!-- float: right -->
+
+    <!-- <center> -->
+        <!-- <h1 class="text-green-600 text-5xl font-bold"> -->
+            <!-- GeeksforGeeks -->
+        <!-- </h1> -->
+        <!-- <b>Tailwind CSS float Class</b> -->
+        <!-- <div class="mx-10"> -->
+            <!-- <img class="float-right p-2" -->
+                <!-- src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+            <!-- <p class="text-justify">float: right</p> -->
+
+    <!-- </center> -->
+
+    <!-- float: left -->
+    <!-- <b>Tailwind CSS float Class</b> -->
+    <!-- <div class="mx-10"> -->
+        <!-- <img class="float-right p-2" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+        <!-- <p class="text-justify">float: left</p> -->
+
+
+        <!-- float: none -->
+        <!-- <b>Tailwind CSS float Class</b> -->
+        <!-- <div class="mx-10"> -->
+            <!-- <img class="float-right p-2" -->
+                <!-- src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+            <!-- <p class="text-justify">float: none</p> -->
+
+            <!-- clear: left -->
+            <!-- <p class="text-justify clear-left"> -->
+                <!-- Lorem ipsum dolor sit amet.</p> -->
+
+
+            <!-- clear: right -->
+            <!-- <p class="text-justify clear-right"> -->
+                <!-- How many times were you frustrated while looking out -->
+                <!-- for a good collection of programming/algorithm/interview -->
+                <!-- questions? What did you expect and what</p> -->
+
+
+            <!-- clear-both -->
+            <!-- <p class="text-justify clear-both"> -->
+                <!-- How many times were you frustrated while looking out -->
+                <!-- for a good collection of programming/algorithm/interview -->
+                <!-- questions? What did you expect and what did you get?</p> -->
+
+
+
+            <!-- object-fit: contain -->
+            <!-- <img class="object-contain h-48 w-full" -->
+                <!-- src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+
+
+
+            <!-- object-fit: fill -->
+            <!-- <img class="object-fill h-48 w-full" -->
+                <!-- src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+
+
+            <!-- object-fit: cover -->
+            <!-- <img class="object-cover h-48 w-full" -->
+                <!-- src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+
+            <!-- object-fit: none -->
+            <!-- <img class="object-none h-48 w-full" -->
+                <!-- src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+
+            <!-- object-fit: scale-down -->
+            <!-- <img class="object-scale-down h-48 w-full" -->
+                <!-- src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+
+
+            <!-- object-position -->
+
+            <!-- <img title="object-left-top" class="object-none  -->
+                       <!-- object-left-top  -->
+                       <!-- bg-green-200  -->
+                       <!-- w-24 h-24 -->
+                       <!-- border-4 my-4" -->
+                <!-- src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+
+
+            <!-- <img title="object-left" class="object-none  -->
+                       <!-- object-left  -->
+                       <!-- bg-green-200  -->
+                       <!-- w-24 h-24  -->
+                       <!-- border-4" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+
+
+            <!-- <img title="object-left-bottom" class="object-none  -->
+                       <!-- object-left-bottom  -->
+                       <!-- bg-green-200 -->
+                       <!-- w-24 h-24  -->
+                       <!-- border-4" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+
+            <!-- <img title="object-top" class="object-none  -->
+                       <!-- object-top  -->
+                       <!-- bg-green-200  -->
+                       <!-- w-24 h-24  -->
+                       <!-- border-4" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+
+
+            <!-- <img title="object-center" class="object-none  -->
+                       <!-- object-center  -->
+                       <!-- bg-green-200  -->
+                       <!-- w-24 h-24  -->
+                       <!-- border-4" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+            <!-- <img title="object-bottom" class="object-none  -->
+                       <!-- object-bottom  -->
+                       <!-- bg-green-200  -->
+                       <!-- w-24 h-24  -->
+                       <!-- border-4" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+
+            <!-- <img title="object-right-top" class="object-none -->
+                       <!-- object-right-top  -->
+                       <!-- bg-green-200 -->
+                       <!-- w-24 h-24 -->
+                       <!-- border-4" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+            <!-- <img title="object-right" class="object-none  -->
+                       <!-- object-right  -->
+                       <!-- bg-green-200 -->
+                       <!-- w-24 h-24  -->
+                       <!-- border-4" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+
+            <!-- <img title="object-right-bottom" class="object-none  -->
+                       <!-- object-right-bottom -->
+                       <!-- bg-green-200  -->
+                       <!-- w-24 h-24 -->
+                       <!-- border-4" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png"> -->
+
+
+
+
+            <!-- overflow: auto -->
+            <!-- <div class="overflow-auto bg-green-200   -->
+                <!-- p-4 mx-16 h-24 text-justify"> -->
+                <!-- How many times were you frustrated while -->
+                <!-- looking out for a good -->
+            <!-- </div> -->
+
+
+            <!-- overflow: hidden -->
+            <!-- <div class="overflow-hidden bg-green-200   -->
+            <!-- p-4 mx-16 h-24 text-justify"> -->
+                <!-- How many times were you frustrated while -->
+                <!-- looking out for a good collection of -->
+                <!-- programming/algorithm/interview questions? -->
+                <!-- What did you expect and what did you get? -->
+                <!-- This portal has been created to provide -->
+                <!-- well written, w</div> -->
+
+            <!-- overflow: visible -->
+
+            <!-- <div class="overflow-visible bg-green-200   -->
+                <!-- p-4 mx-16 h-24 text-justify"> -->
+                <!-- How many times were you frustrated while -->
+                <!-- looking out for a good collection of -->
+                <!-- programming/algorithm/interview questions? -->
+                <!-- What did you expect and what did you get? -->
+                <!-- This portal has been created to provide -->
+                <!-- well wr</div> -->
+
+
+            <!-- overflow: scroll -->
+            <!-- <div class="overflow-scroll bg-green-200   -->
+                <!-- p-4 mx-16 h-24 text-justify"> -->
+                <!-- How many times</div> -->
+
+            <!-- overflow-x: auto -->
+            <!-- <div class="overflow-x-auto bg-green-200   -->
+                <!-- p-4 mx-16 h-24 text-justify"> -->
+                <!-- How many times were you frustrated while -->
+                <!-- looking -->
+			<!-- </div>	 -->
+
+
+                <!-- overflow-x: hidden -->
+                <!-- <div class="overflow-x-hidden bg-green-200   -->
+                <!-- p-4 mx-16 h-12 text-justify"> -->
+                    <!-- How many t</div> -->
+
+                <!-- overflow-x: visible -->
+                <!-- <div class="overflow-x-visible bg-green-200   -->
+                <!-- p-4 mx-16 h-24 text-justify"> -->
+                    <!-- How many times were you frustrated while -->
+                    <!-- looking out for a good collection of -->
+                    <!-- programming/</div> -->
+
+
+                <!-- overflow-x: scroll -->
+                <!-- <div class="overflow-x-scroll bg-green-200   -->
+            <!-- p-4 mx-16 h-24 text-justify"> -->
+                    <!-- How many times were you frustrated while -->
+                    <!-- looking out for a good collection of -->
+                    <!-- programming/algorithm/interview questions? -->
+                    <!-- What did you expe</div> -->
+
+                <!-- overflow-y: auto -->
+
+                <!-- <div class="overflow-y-auto bg-green-200   -->
+                    <!-- p-4 mx-16 h-24 text-justify"> -->
+                    <!-- How many times were you frustrated while -->
+                    <!-- looking out for a good collection of -->
+                    <!-- programming/algorithm/interview questions? -->
+                    <!-- What did you expect and what did you get? -->
+                <!-- </div> -->
+
+
+
+                <!-- overflow-y: hidden -->
+
+                <!-- <div class="overflow-y-hidden bg-green-200  -->
+                <!-- p-4 mx-16 h-24 text-justify"> -->
+                    <!-- How many times were you frustrated while -->
+                    <!-- looking out for a good collection of -->
+                    <!-- programming/algorithm/interview questions? -->
+                    <!-- What did you expect and what did you get? -->
+                <!-- </div> -->
+
+                <!-- overflow-y: visible -->
+
+                <!-- <div class="overflow-y-visible bg-green-200  -->
+            <!-- p-4 mx-16 h-24 text-justify"> -->
+                    <!-- How many times were you frustrated while -->
+                    <!-- looking out for a good collection of -->
+                    <!-- programming/algorithm/interview questions? -->
+                    <!-- What did you expect and what did you get? -->
+                <!-- </div> -->
+
+                <!-- overflow-y: scroll -->
+                <!-- <div class="overflow-y-scroll bg-green-200   -->
+                <!-- p-4 mx-16 h-24 text-justify"> -->
+                    <!-- How many times were you frustrated while -->
+                    <!-- looking out for a good collection of -->
+                    <!-- programming/algorithm/interview questions? -->
+                    <!-- What did you expect and what did you get? -->
+                <!-- </div> -->
+
+
+
+
+                <!-- overscroll -->
+
+                <!-- <div class="flex"> -->
+                    <!-- <div class="overscroll-contain bg-green-200 p-4   -->
+                        <!-- mx-24 w-1/3 text-justify"> -->
+                        <!-- This portal has been created to provide well -->
+                        <!-- written, well thought and well explained -->
+                        <!-- solutions for selected questions. An IIT -->
+                        <!-- Roorkee alumnus and founder of GeeksforGeeks. -->
+                        <!-- He loves to solve programming problems in -->
+                        <!-- most efficient ways. Apart from GeeksforGeeks, -->
+                        <!-- he has worked with DE Shaw and Co. as a -->
+                        <!-- software developer and JIIT Noida as an -->
+                        <!-- assistant professor. -->
+                    <!-- </div> -->
+
+                    <!-- <div class="overscroll-auto overflow-y-scroll   -->
+                        <!-- bg-green-400 p-2 w-1/4 h-24"> -->
+                        <!-- This is a smaller element that is also -->
+                        <!-- scrollable. The overscroll behavior can -->
+                        <!-- be used to control if the main content -->
+                        <!-- behind would scroll when this element's -->
+                        <!-- vertical boundary is reached. -->
+                    <!-- </div> -->
+                <!-- </div> -->
+
+
+                <!-- <div class="flex"> -->
+                    <!-- <div class="overscroll-contain bg-green-200 p-4   -->
+                                <!-- mx-24 w-1/3 text-justify"> -->
+                        <!-- This portal has been created to provide well written, -->
+                        <!-- well thought and well explained solutions for selected -->
+                        <!-- questions. An IIT Roorkee alumnus and founder of -->
+                        <!-- GeeksforGeeks. He loves to solve programming problems -->
+                        <!-- in most efficient ways. Apart from GeeksforGeeks, he -->
+                        <!-- has worked with DE Shaw and Co. as a software developer -->
+                        <!-- and JIIT Noida as an assistant professor. -->
+                    <!-- </div> -->
+                    <!-- <div class="overscroll-contain overflow-y-scroll   -->
+                                <!-- bg-green-400 p-2 w-1/4 h-24"> -->
+                        <!-- This is a smaller element that is also -->
+                        <!-- scrollable. The overscroll behavior -->
+                        <!-- can be used to control if the main -->
+                        <!-- content behind would scroll when this -->
+                        <!-- element's vertical boundary is reached. -->
+                    <!-- </div> -->
+                <!-- </div> -->
+
+
+                <!-- <div class="overscroll-contain bg-green-200 p-4   -->
+                <!-- mx-24 w-1/3 text-justify"> -->
+                    <!-- This portal has been created to provide well written, -->
+                    <!-- well thought and well explained solutions for selected -->
+                    <!-- questions. An IIT Roorkee alumnus and founder of -->
+                    <!-- GeeksforGeeks. He loves to solve programming problems -->
+                    <!-- in most efficient ways. Apart from GeeksforGeeks, he -->
+                    <!-- has worked with DE Shaw and Co. as a software developer -->
+                    <!-- and JIIT Noida as an assistant professor. -->
+                <!-- </div> -->
+                <!-- <div class="overscroll-none overflow-y-scroll   -->
+                <!-- bg-green-400 p-2 w-1/4 h-24"> -->
+                    <!-- This is a smaller element that is also -->
+                    <!-- scrollable. The overscroll behavior -->
+                    <!-- can be used to control if the main -->
+                    <!-- content behind would scroll when this -->
+                    <!-- element's vertical boundary is reached. -->
+                <!-- </div> -->
+            <!-- </div> -->
+
+
+            <!-- <div class="flex"> -->
+                <!-- <div class="overscroll-contain bg-green-200 p-4   -->
+                            <!-- mx-24 w-1/3 text-justify"> -->
+                    <!-- This portal has been created to provide well written, -->
+                    <!-- well thought and well explained solutions for selected -->
+                    <!-- questions. An IIT Roorkee alumnus and founder of -->
+                    <!-- GeeksforGeeks. He loves to solve programming problems -->
+                    <!-- in most efficient ways. Apart from GeeksforGeeks, he -->
+                    <!-- has worked with DE Shaw and Co. as a software developer -->
+                    <!-- and JIIT Noida as an assistant professor. -->
+                <!-- </div> -->
+                <!-- <div class="overscroll-behavior-y-auto overflow-y-scroll   -->
+                            <!-- bg-green-400 p-2 w-1/4 h-24"> -->
+                    <!-- This is a smaller element that is also -->
+                    <!-- scrollable. The overscroll behavior -->
+                    <!-- can be used to control if the main -->
+                    <!-- content behind would scroll when this -->
+                    <!-- element's vertical boundary is reached. -->
+                <!-- </div> -->
+            <!-- </div> -->
+
+
+
+            <!-- <div class="flex"> -->
+                <!-- <div class="overscroll-contain bg-green-200 p-4   -->
+                            <!-- mx-24 w-1/3 text-justify"> -->
+                    <!-- This portal has been created to provide well written, -->
+                    <!-- well thought and well explained solutions for selected -->
+                    <!-- questions. An IIT Roorkee alumnus and founder of -->
+                    <!-- GeeksforGeeks. He loves to solve programming problems -->
+                    <!-- in most efficient ways. Apart from GeeksforGeeks, he -->
+                    <!-- has worked with DE Shaw and Co. as a software developer -->
+                    <!-- and JIIT Noida as an assistant professor. -->
+                <!-- </div> -->
+                <!-- <div class="overscroll-behavior-y-contain overflow-y-scroll   -->
+                            <!-- bg-green-400 p-2 w-1/4 h-24"> -->
+                    <!-- This is a smaller element that is also -->
+                    <!-- scrollable. The overscroll behavior -->
+                    <!-- can be used to control if the main -->
+                    <!-- content behind would scroll when this -->
+                    <!-- element's vertical boundary is reached. -->
+                <!-- </div> -->
+            <!-- </div> -->
+
+
+            <!-- <div class="flex"> -->
+                <!-- <div class="overscroll-contain bg-green-200 p-4   -->
+                            <!-- mx-24 w-1/3 text-justify"> -->
+                    <!-- This portal has been created to provide well written, -->
+                    <!-- well thought and well explained solutions for selected -->
+                    <!-- questions. An IIT Roorkee alumnus and founder of -->
+                    <!-- GeeksforGeeks. He loves to solve programming problems -->
+                    <!-- in most efficient ways. Apart from GeeksforGeeks, he -->
+                    <!-- has worked with DE Shaw and Co. as a software developer -->
+                    <!-- and JIIT Noida as an assistant professor. -->
+                <!-- </div> -->
+                <!-- <div class="overscroll-behavior-y-none overflow-y-scroll   -->
+                            <!-- bg-green-400 p-2 w-1/4 h-24"> -->
+                    <!-- This is a smaller element that is also -->
+                    <!-- scrollable. The overscroll behavior -->
+                    <!-- can be used to control if the main -->
+                    <!-- content behind would scroll when this -->
+                    <!-- element's vertical boundary is reached. -->
+                <!-- </div> -->
+            <!-- </div> -->
+
+
+            <!-- <div class="flex"> -->
+                <!-- <div class="overscroll-contain bg-green-200 p-4   -->
+                            <!-- mx-24 w-1/3 text-justify"> -->
+                    <!-- This portal has been created to provide well written, -->
+                    <!-- well thought and well explained solutions for selected -->
+                    <!-- questions. An IIT Roorkee alumnus and founder of -->
+                    <!-- GeeksforGeeks. He loves to solve programming problems -->
+                    <!-- in most efficient ways. Apart from GeeksforGeeks, he -->
+                    <!-- has worked with DE Shaw and Co. as a software developer -->
+                    <!-- and JIIT Noida as an assistant professor. -->
+                <!-- </div> -->
+                <!-- <div class="overscroll-behavior-x-auto overflow-x-scroll   -->
+                            <!-- bg-green-400 p-2 w-1/4 h-24"> -->
+                    <!-- This is a smaller element that is also -->
+                    <!-- scrollable. The overscroll behavior -->
+                    <!-- can be used to control if the main -->
+                    <!-- content behind would scroll when this -->
+                    <!-- element's vertical boundary is reached. -->
+                <!-- </div> -->
+            <!-- </div> -->
+
+
+            <!-- <div class="flex"> -->
+                <!-- <div class="overscroll-contain bg-green-200 p-4   -->
+                            <!-- mx-24 w-1/3 text-justify"> -->
+                    <!-- This portal has been created to provide well written, -->
+                    <!-- well thought and well explained solutions for selected -->
+                    <!-- questions. An IIT Roorkee alumnus and founder of -->
+                    <!-- GeeksforGeeks. He loves to solve programming problems -->
+                    <!-- in most efficient ways. Apart from GeeksforGeeks, he -->
+                    <!-- has worked with DE Shaw and Co. as a software developer -->
+                    <!-- and JIIT Noida as an assistant professor. -->
+                <!-- </div> -->
+                <!-- <div class="overscroll-behavior-x-contain overflow-x-scroll   -->
+                            <!-- bg-green-400 p-2 w-1/4 h-24"> -->
+                    <!-- This is a smaller element that is also -->
+                    <!-- scrollable. The overscroll behavior -->
+                    <!-- can be used to control if the main -->
+                    <!-- content behind would scroll when this -->
+                    <!-- element's vertical boundary is reached. -->
+                <!-- </div> -->
+            <!-- </div> -->
+
+
+            <!-- <div class="flex"> -->
+                <!-- <div class="overscroll-contain bg-green-200 p-4   -->
+                            <!-- mx-24 w-1/3 text-justify"> -->
+                    <!-- This portal has been created to provide well written, -->
+                    <!-- well thought and well explained solutions for selected -->
+                    <!-- questions. An IIT Roorkee alumnus and founder of -->
+                    <!-- GeeksforGeeks. He loves to solve programming problems -->
+                    <!-- in most efficient ways. Apart from GeeksforGeeks, he -->
+                    <!-- has worked with DE Shaw and Co. as a software developer -->
+                    <!-- and JIIT Noida as an assistant professor. -->
+                <!-- </div> -->
+                <!-- <div class="overscroll-behavior-x-none overflow-x-scroll   -->
+                            <!-- bg-green-400 p-2 w-1/4 h-24"> -->
+                    <!-- This is a smaller element that is also -->
+                    <!-- scrollable. The overscroll behavior -->
+                    <!-- can be used to control if the main -->
+                    <!-- content behind would scroll when this -->
+                    <!-- element's vertical boundary is reached. -->
+                <!-- </div> -->
+            <!-- </div> -->
+
+
+
+            <!-- position: static --> <!-- position: absolute -->
+            <!-- <div class="static text-left p-2 m-2 bg-green-200 h-48"> -->
+                <!-- <p class="font-bold">Static parent</p> -->
+
+                
+
+                <!-- <div class="absolute bottom-0 left-0 p-2  -->
+                            <!-- bg-green-500"> -->
+
+                    <!-- <p>Absolute child</p> -->
+
+                <!-- </div> -->
+            <!-- </div> -->
+
+
+            <!-- position: fixed -->
+			<!--
+            <div class="float-right fixed">
+                <p class="bg-green-500 p-2">
+                    Geeksforgeeks Fixed Child
+                </p>
+
+            </div>
+
+
+		
+            <div class="static text-left p-2 m-2 bg-green-200 h-48">
+                <p class="font-bold">Static parent</p>
+
+
+                <div class="absolute bottom-0 left-0 p-2 
+                            bg-green-500">
+
+                    <p>Absolute child</p>
+
+                </div>
+            </div>
+			-->
+			
+            <!-- position: relative -->
+			<!--
+            <div class="static text-left p-2 m-2 bg-green-200 h-48">
+                <p class="font-bold">Static parent</p>
+
+
+                <div class="relative p-2 inline-block 
+                            bg-green-500">
+
+                    <p>Relative child</p>
+
+                </div>
+                <div class="relative p-2 inline-block 
+                            bg-green-600">
+
+                    <p>Relative Sibling child</p>
+
+                </div>
+            </div>
+			-->
+</body>
+
+</html>
