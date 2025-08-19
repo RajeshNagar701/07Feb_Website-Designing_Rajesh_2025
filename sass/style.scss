@@ -1,0 +1,138 @@
+
+/* store css property in variabe dfsffsdf */
+
+$tc:#078357;
+$bg: #e901ce;
+$tf:Helvetica, sans-serif;
+$ts:16px;
+
+.sassbox{
+    width: 100px;
+    height: 100px;
+    color:$tc;
+    background-color: $bg;
+    font-family: $tf;
+    font-size: $ts;
+}
+
+
+//in sass nested css 
+
+nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+      background-color: $bg;
+      color: $tc;
+    }
+  }
+  
+  h2{
+    font: {
+      family: Helvetica, sans-serif;
+      size: 18px;
+      weight: bold;
+    }
+    text: {
+      align: center;
+      transform: lowercase;
+      overflow: hidden;
+      decoration: underline;
+    }      
+}
+
+/*
+
+// @import
+and now we want to import the "reset.scss" file into another file called "standard.scss".
+Here is how we do it: It is normal to add the @import directive at the top of a file; this way its content will have a global scope:
+
+1)SCSS Syntax (reset.scss):
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+
+2)SCSS Syntax (standard.scss):
+
+@import "reset";
+
+*/
+
+
+/*
+
+Sass Mixins
+The @mixin directive lets you create CSS code that is to be reused throughout the website.
+
+The @include directive is created to let you use (include) the mixin.
+
+@mixin important-text {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+
+Using a Mixin
+The @include directive is used to include a mixin.
+
+Sass @include mixin Syntax:
+
+selector {
+  @include mixin-name;
+
+}
+
+*/
+
+
+
+/*
+Sass @extend Directive
+The @extend directive lets you share a set of CSS properties 
+from one selector to another.
+
+*/
+
+.button-basic  {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+  }
+
+.red{
+    @extend .button-basic;
+    background-color: #ff0000;
+}  
+
+.blue{
+    @extend .button-basic;
+    background-color: #0d00ff;
+}  
+.yellow{
+    @extend .button-basic;
+    background-color: #eed707;
+} 
+.orange{
+    @extend .button-basic;
+    background-color: #ee8a07;
+}

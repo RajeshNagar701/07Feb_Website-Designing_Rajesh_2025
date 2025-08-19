@@ -1,0 +1,103 @@
+<!--
+What is Sass?
+Sass stands for Syntactically Awesome Stylesheet
+Sass is an extension to CSS
+Sass is a CSS pre-processor
+Sass is completely compatible with all versions of CSS
+Sass reduces repetition of CSS and therefore saves time
+Sass was designed by Hampton Catlin and developed by Natalie Weizenbaum in 2006
+Sass is free to download and use
+
+Why Use Sass?
+
+Stylesheets are getting larger, more complex, and harder to maintain. 
+This is where a CSS pre-processor can help.
+
+Sass lets you use features that do not exist in CSS, 
+like 
+
+variables, 
+nested rules, 
+mixins, 
+imports, 
+inheritance, 
+built-in functions, 
+and other stuff.
+
+
+Steps to use Sass in an HTML project:
+
+1)nstall Node.js and npm:
+
+2)cmd :  npm install -g sass
+
+3) create file style.scss
+
+Write Sass code:
+Populate your Sass file with Sass syntax (e.g., variables, nesting, mixins).
+
+4)Compile Sass to CSS:
+Use the Sass command-line interface to compile your Sass file into a CSS file.
+
+    sass style.scss style.css
+
+5) To automatically recompile 
+CSS whenever changes are made to the Sass file, use the --watch flag:
+
+    sass --watch style.scss style.css
+	
+6)Link CSS to HTML: 
+In your index.html file, link the compiled CSS file within the <head> section:	
+
+    <link rel="stylesheet" href="style.css">
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+			<div class='sassbox'>Hello SASS CSS</div>
+
+            <hr />
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <hr />
+
+            <h2>Hello i am nested SASS css</h2>
+
+            <hr />
+
+            <button class='button-basic'>Baisc</button>
+            <button class='red'>Red</button>
+            <button class='blue'>blue</button>
+            <button class='yellow'>yellow</button>
+            <button class='orange'>orange</button>
+
+        </div>
+	
+</body>
+</html>
