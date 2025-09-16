@@ -4,6 +4,9 @@ import Mycss from "./css/Mycss";
 import Jsx from "./JSX/Jsx";
 import Layout from "./layout/Layout";
 import Mycom from "./Mycom";
+import Module_css from "./Module_css/Module_css";
+import Main_Sass from "./Sass/Main_Sass";
+
 
 function App() {
   return (
@@ -15,9 +18,13 @@ function App() {
 
         //<Layout/>
         //<Jsx/>
-        <Mycss/>
+        //<Mycss/>
+
+        //<Module_css/>
+        <Main_Sass/>
       }
-    
+
+      
     </div>
   );
 }

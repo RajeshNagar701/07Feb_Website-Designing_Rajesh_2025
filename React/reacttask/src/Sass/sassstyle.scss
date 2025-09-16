@@ -1,0 +1,85 @@
+//css store variable 
+
+$bc: lightblue;
+$tc: darkblue;
+$fs: 18px;
+
+.mysass {
+    background-color: $bc;
+    color: $tc;
+    font-size: $fs;
+  } 
+
+
+
+  
+   //Nested
+
+   nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+  }     
+
+  // nested properties
+
+.myproperties{
+    font: {
+      family: Helvetica, sans-serif;
+      size: 18px;
+      weight: bold;
+    }
+  }
+  .myproperties1{
+    text: {
+      align: center;
+      transform: lowercase;
+      overflow: hidden;
+    }
+  }
+
+  
+// extends
+
+.button-basic  {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .button-red  {
+    @extend .button-basic;
+    background-color: red;
+  }
+  
+  .button-green  {
+    @extend .button-basic;
+    background-color: green;
+  }
+  .button-blue  {
+    @extend .button-basic;
+    background-color: blue;
+  }
+
+  .button-purple  {
+    @extend .button-basic;
+    background-color: purple;
+  }
+
+  .button-orange  {
+    @extend .button-basic;
+    background-color: orange;
+  }
