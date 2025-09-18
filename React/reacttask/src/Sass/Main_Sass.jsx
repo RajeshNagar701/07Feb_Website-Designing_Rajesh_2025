@@ -4,8 +4,8 @@ Sass is a CSS pre-processor.
 Sass (Syntactically Awesome Stylesheets) is a CSS preprocessor 
 that extends CSS by adding features like 
 
-variables, 
-nesting,
+variables,  $tc=lightblue
+nesting,    
 mixins, 
 and more, making it easier to write and maintain stylesheets. 
 
@@ -17,12 +17,7 @@ Create a Sass file : .scss
 
 */
 
-
-
-
-
 import React from 'react'
-
 import './sassstyle.scss' // IMPORT SASSCSS
 
 
