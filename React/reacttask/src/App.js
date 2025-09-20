@@ -8,6 +8,7 @@ import Module_css from "./Module_css/Module_css";
 import Main_Sass from "./Sass/Main_Sass";
 import Props_func from "./Props/Func_component/Props_func";
 import Props_class from "./Props/Class_component/Props_class";
+import State_func from "./State/Func_state/State_func";
 
 
 function App() {
@@ -25,10 +26,13 @@ function App() {
         //<Module_css/>
         //<Main_Sass/>
 
-
         // props
         //<Props_func/>
-        <Props_class/>
+        //<Props_class/>
+
+
+        // state
+        <State_func/>
       }
 
       
