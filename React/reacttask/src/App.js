@@ -9,6 +9,7 @@ import Main_Sass from "./Sass/Main_Sass";
 import Props_func from "./Props/Func_component/Props_func";
 import Props_class from "./Props/Class_component/Props_class";
 import State_func from "./State/Func_state/State_func";
+import State_class from "./State/Class_state/State_class";
 
 
 function App() {
@@ -32,7 +33,8 @@ function App() {
 
 
         // state
-        <State_func/>
+        //<State_func/>
+        <State_class/>
       }
 
       
