@@ -4,6 +4,7 @@ import Card_img from './Card_img'
 function Props_func() {
   return (
     <div className='container'>
+      
         <div className='row'>
             <Card_img img="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" title="Fjallraven"/>
             <Card_img img="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png" title="Fit T-Shirts"/>

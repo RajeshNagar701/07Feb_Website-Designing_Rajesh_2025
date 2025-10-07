@@ -13,6 +13,9 @@ import State_class from "./State/Class_state/State_class";
 import Life_class from "./LifeCycle/Life_class/Life_class";
 import Life_func from "./LifeCycle/Life_func/Life_func";
 import Aapp from "./Routing/Aapp";
+import React_bootstrap from "./React_bootstrap/React_bootstrap";
+import Mui from "./MUI/Mui";
+import Styled_component from "./Styled_component/Styled_component";
 
 
 function App() {
@@ -44,7 +47,13 @@ function App() {
         //<Life_func/>
 
         //Routing
-        <Aapp/>
+        //<Aapp/>
+
+        // React-bootsrap
+        //<React_bootstrap/>
+        //<Mui/>
+
+        <Styled_component/>
       }
 
       
