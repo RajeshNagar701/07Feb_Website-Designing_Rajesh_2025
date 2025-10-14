@@ -8,7 +8,7 @@ function Shop_details() {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="left-image">
-                                <img src="assets/images/single-game.jpg" alt />
+                                <img src="website/assets/images/single-game.jpg" alt />
                             </div>
                         </div>
                         <div className="col-lg-6 align-self-center">
@@ -81,7 +81,7 @@ function Shop_details() {
                             <div className="item">
                                 <h4>Action</h4>
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/categories-01.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/categories-01.jpg" alt /></a>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +89,7 @@ function Shop_details() {
                             <div className="item">
                                 <h4>Action</h4>
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/categories-05.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/categories-05.jpg" alt /></a>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ function Shop_details() {
                             <div className="item">
                                 <h4>Action</h4>
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/categories-03.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/categories-03.jpg" alt /></a>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +105,7 @@ function Shop_details() {
                             <div className="item">
                                 <h4>Action</h4>
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/categories-04.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/categories-04.jpg" alt /></a>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +113,7 @@ function Shop_details() {
                             <div className="item">
                                 <h4>Action</h4>
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/categories-05.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/categories-05.jpg" alt /></a>
                                 </div>
                             </div>
                         </div>

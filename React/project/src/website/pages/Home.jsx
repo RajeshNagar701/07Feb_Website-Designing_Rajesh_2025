@@ -10,7 +10,7 @@ function Home() {
                             <a href="#">
                                 <div className="item">
                                     <div className="image">
-                                        <img src="assets/images/featured-01.png" alt style={{ maxWidth: 44 }} />
+                                        <img src="website/assets/images/featured-01.png" alt style={{ maxWidth: 44 }} />
                                     </div>
                                     <h4>Free Storage</h4>
                                 </div>
@@ -20,7 +20,7 @@ function Home() {
                             <a href="#">
                                 <div className="item">
                                     <div className="image">
-                                        <img src="assets/images/featured-02.png" alt style={{ maxWidth: 44 }} />
+                                        <img src="website/assets/images/featured-02.png" alt style={{ maxWidth: 44 }} />
                                     </div>
                                     <h4>User More</h4>
                                 </div>
@@ -30,7 +30,7 @@ function Home() {
                             <a href="#">
                                 <div className="item">
                                     <div className="image">
-                                        <img src="assets/images/featured-03.png" alt style={{ maxWidth: 44 }} />
+                                        <img src="website/assets/images/featured-03.png" alt style={{ maxWidth: 44 }} />
                                     </div>
                                     <h4>Reply Ready</h4>
                                 </div>
@@ -40,7 +40,7 @@ function Home() {
                             <a href="#">
                                 <div className="item">
                                     <div className="image">
-                                        <img src="assets/images/featured-04.png" alt style={{ maxWidth: 44 }} />
+                                        <img src="website/assets/images/featured-04.png" alt style={{ maxWidth: 44 }} />
                                     </div>
                                     <h4>Easy Layout</h4>
                                 </div>
@@ -66,7 +66,7 @@ function Home() {
                         <div className="col-lg-3 col-md-6">
                             <div className="item">
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/trending-01.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/trending-01.jpg" alt /></a>
                                     <span className="price"><em>$28</em>$20</span>
                                 </div>
                                 <div className="down-content">
@@ -79,7 +79,7 @@ function Home() {
                         <div className="col-lg-3 col-md-6">
                             <div className="item">
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/trending-02.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/trending-02.jpg" alt /></a>
                                     <span className="price">$44</span>
                                 </div>
                                 <div className="down-content">
@@ -92,7 +92,7 @@ function Home() {
                         <div className="col-lg-3 col-md-6">
                             <div className="item">
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/trending-03.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/trending-03.jpg" alt /></a>
                                     <span className="price"><em>$64</em>$44</span>
                                 </div>
                                 <div className="down-content">
@@ -105,7 +105,7 @@ function Home() {
                         <div className="col-lg-3 col-md-6">
                             <div className="item">
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/trending-04.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/trending-04.jpg" alt /></a>
                                     <span className="price">$32</span>
                                 </div>
                                 <div className="down-content">
@@ -135,7 +135,7 @@ function Home() {
                         <div className="col-lg-2 col-md-6 col-sm-6">
                             <div className="item">
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/top-game-01.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/top-game-01.jpg" alt /></a>
                                 </div>
                                 <div className="down-content">
                                     <span className="category">Adventure</span>
@@ -147,7 +147,7 @@ function Home() {
                         <div className="col-lg-2 col-md-6 col-sm-6">
                             <div className="item">
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/top-game-02.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/top-game-02.jpg" alt /></a>
                                 </div>
                                 <div className="down-content">
                                     <span className="category">Adventure</span>
@@ -159,7 +159,7 @@ function Home() {
                         <div className="col-lg-2 col-md-6 col-sm-6">
                             <div className="item">
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/top-game-03.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/top-game-03.jpg" alt /></a>
                                 </div>
                                 <div className="down-content">
                                     <span className="category">Adventure</span>
@@ -171,7 +171,7 @@ function Home() {
                         <div className="col-lg-2 col-md-6 col-sm-6">
                             <div className="item">
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/top-game-04.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/top-game-04.jpg" alt /></a>
                                 </div>
                                 <div className="down-content">
                                     <span className="category">Adventure</span>
@@ -183,7 +183,7 @@ function Home() {
                         <div className="col-lg-2 col-md-6 col-sm-6">
                             <div className="item">
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/top-game-05.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/top-game-05.jpg" alt /></a>
                                 </div>
                                 <div className="down-content">
                                     <span className="category">Adventure</span>
@@ -195,7 +195,7 @@ function Home() {
                         <div className="col-lg-2 col-md-6 col-sm-6">
                             <div className="item">
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/top-game-06.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/top-game-06.jpg" alt /></a>
                                 </div>
                                 <div className="down-content">
                                     <span className="category">Adventure</span>
@@ -220,7 +220,7 @@ function Home() {
                             <div className="item">
                                 <h4>Action</h4>
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/categories-01.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/categories-01.jpg" alt /></a>
                                 </div>
                             </div>
                         </div>
@@ -228,7 +228,7 @@ function Home() {
                             <div className="item">
                                 <h4>Action</h4>
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/categories-05.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/categories-05.jpg" alt /></a>
                                 </div>
                             </div>
                         </div>
@@ -236,7 +236,7 @@ function Home() {
                             <div className="item">
                                 <h4>Action</h4>
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/categories-03.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/categories-03.jpg" alt /></a>
                                 </div>
                             </div>
                         </div>
@@ -244,7 +244,7 @@ function Home() {
                             <div className="item">
                                 <h4>Action</h4>
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/categories-04.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/categories-04.jpg" alt /></a>
                                 </div>
                             </div>
                         </div>
@@ -252,7 +252,7 @@ function Home() {
                             <div className="item">
                                 <h4>Action</h4>
                                 <div className="thumb">
-                                    <a href="product-details.html"><img src="assets/images/categories-05.jpg" alt /></a>
+                                    <a href="product-details.html"><img src="website/assets/images/categories-05.jpg" alt /></a>
                                 </div>
                             </div>
                         </div>

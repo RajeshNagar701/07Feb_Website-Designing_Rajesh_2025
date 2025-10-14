@@ -6,6 +6,8 @@ import Contact from "./website/pages/Contact";
 import Header2 from "./website/components/Header2";
 import Shop from "./website/pages/Shop";
 import Shop_details from "./website/pages/Shop_details";
+import Admin_login from "./admin/pages/Admin_login";
+import Dashboard from "./admin/pages/Dashboard";
 
 
 function App() {
@@ -13,10 +15,20 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
+
+          {
+            //website routes 
+          }
           <Route path="/" element={<><Header1 /><Home /><Footer /></>}></Route>
-          <Route path="/contact" element={<><Header2 title="Contact Us"/><Contact /><Footer /></>}></Route>
-          <Route path="/shop" element={<><Header2 title="Shop Us"/><Shop /><Footer /></>}></Route>
-          <Route path="/shop-details" element={<><Header2  title="Shop Details"/><Shop_details /><Footer /></>}></Route>
+          <Route path="/contact" element={<><Header2 title="Contact Us" /><Contact /><Footer /></>}></Route>
+          <Route path="/shop" element={<><Header2 title="Shop Us" /><Shop /><Footer /></>}></Route>
+          <Route path="/shop-details" element={<><Header2 title="Shop Details" /><Shop_details /><Footer /></>}></Route>
+
+          {
+            //Admin routes 
+          }
+          <Route path="/admin-login" element={<><Admin_login /></>}></Route>
+          <Route path="/dashboard" element={<><Dashboard /></>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

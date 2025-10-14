@@ -13,7 +13,7 @@ function Header2({title}) {
                             <nav className="main-nav">
                                 {/* ***** Logo Start ***** */}
                                 <NavLink to="/" className="logo">
-                                    <img src="assets/images/logo.png" alt style={{ width: 158 }} />
+                                    <img src="website/assets/images/logo.png" alt style={{ width: 158 }} />
                                 </NavLink>
                                 {/* ***** Logo End ***** */}
                                 {/* ***** Menu Start ***** */}

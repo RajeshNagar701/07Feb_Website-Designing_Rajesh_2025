@@ -13,7 +13,7 @@ function Header1() {
                             <nav className="main-nav">
                                 {/* ***** Logo Start ***** */}
                                 <NavLink to="/" className="logo">
-                                    <img src="assets/images/logo.png" alt style={{ width: 158 }} />
+                                    <img src="website/assets/images/logo.png" alt style={{ width: 158 }} />
                                 </NavLink>
                                 {/* ***** Logo End ***** */}
                                 {/* ***** Menu Start ***** */}
@@ -52,7 +52,7 @@ function Header1() {
                         </div>
                         <div className="col-lg-4 offset-lg-2">
                             <div className="right-image">
-                                <img src="assets/images/banner-image.jpg" alt />
+                                <img src="website/assets/images/banner-image.jpg" alt />
                                 <span className="price">$22</span>
                                 <span className="offer">-40%</span>
                             </div>
