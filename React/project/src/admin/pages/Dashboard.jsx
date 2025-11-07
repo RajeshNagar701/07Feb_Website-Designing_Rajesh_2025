@@ -1,40 +1,58 @@
 import React from 'react'
-import Afooter from '../components/Afooter'
-import Aheader from '../components/Aheader'
+
 
 function Dashboard() {
   return (
     <div>
-      <div className="navbar navbar-inverse" role="navigation">
-        <div className="navbar-header">
-          <div className="logo"><h1>Dashboard - Admin Template</h1></div>
-          <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span className="sr-only">Toggle navigation</span>
-            <span className="icon-bar" />
-            <span className="icon-bar" />
-            <span className="icon-bar" />
-          </button>
-        </div>
-      </div>
-      <div className="template-page-wrapper">
+     
+       
 
-        <Aheader />
-
-        <div className="templatemo-content-wrapper">
-          <div className="templatemo-content">
-            <ol className="breadcrumb">
-              <li><a href="index.html">Admin Panel</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li className="active">Overview</li>
-              <li><a href="sign-in.html">Sign In Form</a></li>
-            </ol>
-            <h1>Dashboard</h1>
-            <p>Dashboard is free admin template for everyone. Credits go to <a href="http://chartjs.org">Chart JS</a>, <a href="http://getbootstrap.com">Bootstrap</a>, and <a href="http://jqvmap.com">JQVMap</a>. templatemo provides <a href="#">free website templates</a> that can be used for any purpose. Morbi id nisi enim. Ut congue interdum pharetra facilisi. Aenean consectetur pellentesque mauris nec ornare. Nam tortor just, condimentum.</p>
-          </div>
-
-        </div>
-        <Afooter />
-      </div>
+         <div className="features">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-3 col-md-6">
+                            <a href="#">
+                                <div className="item">
+                                    <div className="image">
+                                        <img src="website/assets/images/featured-01.png" alt style={{ maxWidth: 44 }} />
+                                    </div>
+                                    <h4>Free Storage</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="col-lg-3 col-md-6">
+                            <a href="#">
+                                <div className="item">
+                                    <div className="image">
+                                        <img src="website/assets/images/featured-02.png" alt style={{ maxWidth: 44 }} />
+                                    </div>
+                                    <h4>User More</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="col-lg-3 col-md-6">
+                            <a href="#">
+                                <div className="item">
+                                    <div className="image">
+                                        <img src="website/assets/images/featured-03.png" alt style={{ maxWidth: 44 }} />
+                                    </div>
+                                    <h4>Reply Ready</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="col-lg-3 col-md-6">
+                            <a href="#">
+                                <div className="item">
+                                    <div className="image">
+                                        <img src="website/assets/images/featured-04.png" alt style={{ maxWidth: 44 }} />
+                                    </div>
+                                    <h4>Easy Layout</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>      
     </div>
 
   )

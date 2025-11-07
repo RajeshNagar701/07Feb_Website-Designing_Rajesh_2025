@@ -31,26 +31,18 @@ function Contact() {
                                     <div className="col-lg-12">
                                         <form id="contact-form" action method="post">
                                             <div className="row">
-                                                <div className="col-lg-6">
+                                                <div className="col-lg-12">
                                                     <fieldset>
                                                         <input type="name" name="name" id="name" placeholder="Your Name..." autoComplete="on" required />
                                                     </fieldset>
                                                 </div>
-                                                <div className="col-lg-6">
-                                                    <fieldset>
-                                                        <input type="surname" name="surname" id="surname" placeholder="Your Surname..." autoComplete="on" required />
-                                                    </fieldset>
-                                                </div>
-                                                <div className="col-lg-6">
+                                              
+                                                <div className="col-lg-12">
                                                     <fieldset>
                                                         <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required />
                                                     </fieldset>
                                                 </div>
-                                                <div className="col-lg-6">
-                                                    <fieldset>
-                                                        <input type="subject" name="subject" id="subject" placeholder="Subject..." autoComplete="on" />
-                                                    </fieldset>
-                                                </div>
+                                             
                                                 <div className="col-lg-12">
                                                     <fieldset>
                                                         <textarea name="message" id="message" placeholder="Your Message" defaultValue={""} />
