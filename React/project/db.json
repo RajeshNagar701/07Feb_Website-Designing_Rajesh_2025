@@ -1,0 +1,79 @@
+{
+    "customers": [
+      {
+        "id": 1,
+        "name": "demo",
+        "email": "demo@gmail.com",
+        "password": "123456",
+        "mobile": 9722041171,
+        "status": "Unblock"
+      },{
+        "id": 2,
+        "name": "demo",
+        "email": "demo@gmail.com",
+        "password": "123456",
+        "mobile": 9722041171,
+        "status": "Unblock"
+      }
+    ],
+
+
+    "contact": [
+      {
+        "id": 1,
+        "name": "jay",
+        "email": "jay@gmail.com",
+        "sub": "demo",
+        "msg": "hi"  
+      },
+      {
+        "id": 2,
+        "name": "raj",
+        "email": "raj@gmail.com",
+        "sub": "demo",
+        "msg": "hi"  
+      }
+    ],
+
+    "admin": [
+      {
+        "id": 1,
+        "name": "admin",
+        "email": "admin@gmail.com",
+        "password": "123456"
+      }
+    ],
+
+     "categories": [
+      {
+        "id": 1,
+        "name": "Sports",
+        "image": "Sports.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Fight",
+        "image": "Fight.jpg"
+      }
+    ],
+
+
+    "products": [
+      {
+        "id": 1,
+        "cate_id":1,
+        "name": "Cricket",
+        "image": "Cricket.jpg",
+        "description":"Crickets sports game",
+        "price":"2999"
+      },
+      {
+        "id": 1,
+        "cate_id":2,
+        "name": "Contra",
+        "image": "Contra.jpg",
+        "description":"Contra Fight game",
+        "price":"9999"
+      }
+    ]
+  }
