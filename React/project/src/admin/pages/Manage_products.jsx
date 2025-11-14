@@ -1,6 +1,22 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
 
 function Manage_products() {
+    useEffect(() => {
+        fetch_product()
+    });
+    const [data, setData] = useState([]);
+    const fetch_product = async () => {
+        const res = await axios.get(`http://localhost:3000/products`);
+        setData(res.data);
+    }
+
+    const deleteHandel = async (id) => {
+        console.log(id);
+        const res = await axios.delete(`http://localhost:3000/products/${id}`);
+        fetch_product();
+    }
+    
     return (
         <div className="container mt-5 p-5">
             <h2 className='mt-5 mb-5 text-center'>Manage Product</h2>
@@ -8,21 +24,34 @@ function Manage_products() {
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Categories Name</th>
-                        <th>Categories Image</th>
+                        <th>Cate ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                        <th>Image</th>
                         <th className='text-center'>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Racing</td>
-                        <td>Racingimage.jpg</td>
-                        <td className='text-center'>
-                            <button className='btn btn-primary me-1'>Edit</button>
-                            <button className='btn btn-danger'>Delete</button>
-                        </td>
-                    </tr>
+                     {
+                        data.map((value) => {
+                            return (
+                                <tr>
+                                    <td>{value.id}</td>
+                                    <td>{value.cate_id}</td>
+                                    <td>{value.name}</td>
+                                    <td>{value.price}</td>
+                                    <td>{value.description}</td>
+                                     <td>{value.image}</td>
+                                    <td className='text-center'>
+                                        <button className='btn btn-primary me-1'>Edit</button>
+                                        <button className='btn btn-danger me-1' onClick={()=>deleteHandel(value.id)}>Delete</button>
+                                    </td>
+                                </tr>
+                            )
+                        })
+                    }
+                   
                    
                 </tbody>
             </table>
