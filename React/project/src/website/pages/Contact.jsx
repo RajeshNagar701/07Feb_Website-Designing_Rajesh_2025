@@ -1,6 +1,26 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useState } from 'react'
 
 function Contact() {
+
+     const [obj_data,setData]=useState({
+        id:"",
+        name:"",
+        email:"",
+        message:""
+    });
+
+    const changeHandel=(e)=>{
+        setData({...obj_data,id:new Date().getTime().toString(),[e.target.name]:e.target.value});
+        console.log(obj_data);
+    }
+
+    const submitHandel = async (e) => {
+        e.preventDefault();
+        const res = await axios.post(`http://localhost:3000/contact`,obj_data);
+        setData({...obj_data,id:"",name:"",email:"",message:""});
+        console.log(res);
+    }
     return (
         <div>
             <div className="contact-page section">
@@ -29,23 +49,23 @@ function Contact() {
                                         </div>
                                     </div>
                                     <div className="col-lg-12">
-                                        <form id="contact-form" action method="post">
+                                        <form id="contact-form" method="post" onSubmit={submitHandel}>
                                             <div className="row">
                                                 <div className="col-lg-12">
                                                     <fieldset>
-                                                        <input type="name" name="name" id="name" placeholder="Your Name..." autoComplete="on" required />
+                                                        <input type="name" value={obj_data.name} name="name" onChange={changeHandel} id="name" placeholder="Your Name..." autoComplete="on" required />
                                                     </fieldset>
                                                 </div>
                                               
                                                 <div className="col-lg-12">
                                                     <fieldset>
-                                                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required />
+                                                        <input type="text" value={obj_data.email} name="email" onChange={changeHandel} id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required />
                                                     </fieldset>
                                                 </div>
                                              
                                                 <div className="col-lg-12">
                                                     <fieldset>
-                                                        <textarea name="message" id="message" placeholder="Your Message" defaultValue={""} />
+                                                        <textarea name="message" value={obj_data.message} id="message" onChange={changeHandel} placeholder="Your Message" />
                                                     </fieldset>
                                                 </div>
                                                 <div className="col-lg-12">

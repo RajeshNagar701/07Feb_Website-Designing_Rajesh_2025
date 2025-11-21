@@ -42,7 +42,7 @@ function Manage_categories() {
                                 <tr>
                                     <td>{value.id}</td>
                                     <td>{value.name}</td>
-                                    <td>{value.image}</td>
+                                    <td width="5%"><img src={value.image} alt="" /></td>
                                     <td className='text-center'>
                                         <button className='btn btn-primary me-1'>Edit</button>
                                         <button className='btn btn-danger'  onClick={()=>deleteHandel(value.id)}>Delete</button>
