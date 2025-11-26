@@ -42,7 +42,7 @@ function Manage_products() {
                                     <td>{value.name}</td>
                                     <td>{value.price}</td>
                                     <td>{value.description}</td>
-                                     <td>{value.image}</td>
+                                     <td width="10%"><img src={value.image} alt=""/></td>
                                     <td className='text-center'>
                                         <button className='btn btn-primary me-1'>Edit</button>
                                         <button className='btn btn-danger me-1' onClick={()=>deleteHandel(value.id)}>Delete</button>

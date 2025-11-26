@@ -1,18 +1,21 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { Link, useNavigate,  } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 
-function Shop() {
+function Shop_view() {
 
     const redirect=useNavigate();
-
     useEffect(() => {
         fetch_product()
-    });
+    },[]);
+
+    const {id}=useParams();
+
     const [data, setData] = useState([]);
     const fetch_product = async () => {
-        const res = await axios.get(`http://localhost:3000/categories`);
+        const res = await axios.get(`http://localhost:3000/products?cate_id=${id}`);
         setData(res.data);
+        console.log(res.data);
     }
 
 
@@ -24,20 +27,26 @@ function Shop() {
                         <div className="col-lg-12">
                             <div className="section-heading">
                                 <h6>Action</h6>
-                                <h2>Games Categories</h2>
+                                <h2>Games Products</h2>
                             </div>
                         </div>
                         {
                             data.map((value) => {
                                 return (
-                                    <div className="col-lg col-sm-6 col-xs-12">
+                                    <div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
                                         <div className="item">
-                                            <h4>{value.name}</h4>
                                             <div className="thumb">
-                                                <a href={void(0)} onClick={() => redirect(`/shop_view/${value.id}`)}><img src={value.image} width="100%" alt /></a>
+                                                <a href={void(0)} onClick={() => redirect(`/shop-details/${value.id}`)}><img src={value.image} width="100%" height="200px" alt /></a>
+                                                <span className="price mt-5">${value.price}</span>
+                                            </div>
+                                            <div className="down-content">
+                                                <span className="category">{value.cate_id}</span>
+                                                <h4>{value.name}</h4>
+                                                <a href={void(0)} onClick={() => redirect(`/shop-details/${value.id}`)}><i className="fa fa-shopping-bag" /></a>
                                             </div>
                                         </div>
                                     </div>
+
 
                                 )
                             })
@@ -53,4 +62,4 @@ function Shop() {
     )
 }
 
-export default Shop
+export default Shop_view
