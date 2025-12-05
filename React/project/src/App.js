@@ -20,6 +20,8 @@ import Manage_products from "./admin/pages/Manage_products";
 import Manage_customers from "./admin/pages/Manage_customers";
 import Manage_contacts from "./admin/pages/Manage_contacts";
 import Shop_view from "./website/pages/Shop_view";
+import Login from "./website/pages/Login";
+import Signup from "./website/pages/Signup";
 
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
           <Route path="/shop" element={<><Header2 title="Shop Us" /><Shop /><Footer /></>}></Route>
           <Route path="/shop_view/:id" element={<><Header2 title="Shop View" /><Shop_view /><Footer /></>}></Route>
           <Route path="/shop-details/:id" element={<><Header2 title="Shop Details" /><Shop_details /><Footer /></>}></Route>
+          <Route path="/login" element={<><Header2 title="Login Us" /><Login/><Footer /></>}></Route>
+          <Route path="/signup" element={<><Header2 title="Signup Us" /><Signup/><Footer /></>}></Route>
 
           {
             //Admin routes 

@@ -1,11 +1,19 @@
 {
   "customers": [
     {
-      "id": "1",
-      "name": "monil",
-      "email": "demo@gmail.com",
-      "password": "123456",
-      "mobile": 9722041171,
+      "id": "1764919465211",
+      "name": "nirav",
+      "email": "nirav@gmail.com",
+      "password": "1234",
+      "mobile": "1234567891",
+      "status": "Unblock"
+    },
+    {
+      "id": "1764919483965",
+      "name": "raj",
+      "email": "raj@gmail.com",
+      "password": "1234",
+      "mobile": "1111111111",
       "status": "Unblock"
     }
   ],

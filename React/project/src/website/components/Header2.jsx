@@ -1,10 +1,18 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
-function Header2({title}) {
+function Header2({ title }) {
+    const redirect = useNavigate();
+
+    const userlogout = () => {
+        sessionStorage.removeItem('uid');
+        sessionStorage.removeItem('uname');
+        alert('Logout Success !');
+        redirect('/');
+    }
     return (
         <div>
-           
+
             {/* ***** Header Area Start ***** */}
             <header className="header-area header-sticky">
                 <div className="container">
@@ -20,9 +28,24 @@ function Header2({title}) {
                                 <ul className="nav">
                                     <li><NavLink to="/" >Home</NavLink></li>
                                     <li><NavLink to="/shop">Our Shop</NavLink></li>
-                                    <li><NavLink to="/shop-details">Product Details</NavLink></li>
                                     <li><NavLink to="/contact">Contact Us</NavLink></li>
-                                    <li><NavLink to="#">Sign In</NavLink></li>
+                                    {(
+                                        () => {
+                                            if (sessionStorage.getItem('uid')) {
+                                                return (
+                                                    <>
+                                                        <li><NavLink to="/user_profile">Hi.. {sessionStorage.getItem('uname')}</NavLink></li>
+                                                        <li><a href="#" onClick={userlogout}>Logout</a></li>
+                                                    </>
+                                                )
+                                            }
+                                            else {
+                                                return (
+                                                    <li><NavLink to="/login">LogIn</NavLink></li>
+                                                )
+                                            }
+                                        }
+                                    )()}
                                 </ul>
                                 <a className="menu-trigger">
                                     <span>Menu</span>
